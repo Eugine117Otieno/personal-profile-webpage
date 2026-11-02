@@ -1,0 +1,182 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background-color: rgb(28, 0, 128);
+
+    transition: background-color 0.5s;
+}
+
+/* Main profile card */
+.profile-card {
+    background-color: white;
+
+    width: 100%;
+    max-width: 680px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Main heading */
+h1 {
+    color: purple;
+    font-size: 32px;
+}
+
+/* Profile picture */
+.profile-picture {
+    width: 190px;
+    height: 190px;
+
+    object-fit: cover;
+    object-position: center 35%;
+
+    border-radius: 50%;
+
+    border: 6px solid purple;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Introduction */
+.intro {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Personal details */
+.details {
+    background-color: #f1e6ff;
+
+    padding: 15px;
+
+    margin: 20px 0;
+
+    border-radius: 15px;
+
+    text-align: left;
+}
+
+.details p {
+    margin: 10px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    background-color: purple;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 18px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: darkblue;
+
+    transform: scale(1.05);
+}
+
+/* More information */
+#more-info {
+    background-color: #fff0cc;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    line-height: 1.7;
+}
+
+/* Greeting */
+#greeting {
+    color: purple;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Activities section */
+.activities {
+    background-color: #f1e6ff;
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+}
+
+.activities h2 {
+    color: purple;
+}
+
+.activities ul {
+    display: inline-block;
+    text-align: left;
+    line-height: 2;
+}
+
+/* Footer */
+footer {
+    margin-top: 25px;
+
+    color: gray;
+
+    font-weight: bold;
+
+    font-size: 13px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+
+    .profile-card {
+        padding: 20px 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .profile-picture {
+        width: 160px;
+        height: 160px;
+    }
+}
